@@ -1,10 +1,12 @@
 /**
- * Created by gaimeng on 14/12/27.
+ * Created by James Deng
  */
 
 var System={};
 var js=document.scripts;
+
 js=js[js.length-1].src.substring(0,js[js.length-1].src.lastIndexOf("/"));
+
 System.path = js;
 System.libPath = System.path.substring(0,System.path.lastIndexOf("/"));
 System.imgPath = System.libPath+"/img";
@@ -958,7 +960,7 @@ IndoorMap.getUI = function(indoorMap){
     }
     //create the ul list
     _uiRoot = document.createElement('ul');
-    _uiRoot.className = 'floorsUI';
+    // _uiRoot.className = 'floorsUI';
 
     if(_indoorMap.is3d) {
         var li = document.createElement('li');

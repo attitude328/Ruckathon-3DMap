@@ -88,11 +88,11 @@ IndoorMap3d = function(mapdiv){
                 callback();
             }
             _this.renderer.setClearColor(_theme.background);
-            if(_curFloorId == 0){
-                _this.showAllFloors();
-            }else{
-                _this.showFloor(_curFloorId);
-            }
+            // if(_curFloorId == 0){
+            //     _this.showAllFloors();
+            // }else{
+                _this.showFloor(2);
+            // }
 
         });
         return _this;
@@ -271,15 +271,19 @@ IndoorMap3d = function(mapdiv){
                 }
                 for(var i=0; i<intersects.length; i++) {
                     _selected = intersects[ i ].object;
+                    select(_selected);
+                        if(_selectionListener) {
+                            _selectionListener(_selected.id); //notify the listener
+                        }
                     if(_selected.type && _selected.type == "solidroom") {
                         select(_selected);
                         if(_selectionListener) {
                             _selectionListener(_selected.id); //notify the listener
                         }
                         break;
-                    }else{
+                    }/*else{
                         _selected = null;
-                    }
+                    }*/
                     if(_selected == null && _selectionListener != null){
                         _selectionListener(-1);
                     }
