@@ -153,7 +153,7 @@ var testTheme = {
         "22006": System.imgPath+"/entry.png",
         "21002": System.imgPath+"/escalator.png",
         "21003": System.imgPath+"/lift.png",
-        "21004": System.imgPath+"/blue-wifi.png"
+        "21004": System.imgPath+"/blue-wifi.png",
         "21005": System.imgPath+"/black-wifi.png"
     }
 
