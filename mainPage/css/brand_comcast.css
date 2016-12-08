@@ -1,0 +1,258 @@
+@charset "utf-8";
+body {
+    color: #404040;
+    background-color:#9ca2a8;
+}
+
+#wrapper-inner {
+    background: #FFF;
+}
+
+#header {
+    background-color: #E5E5E5;
+}
+
+#insta-wifi-img {
+    width: 135px;
+    height: 22.765px;
+}
+
+.psHeadBar {
+    width: 100%;
+    background: #e6e6eb;
+    height: 22px;
+    padding: 20px 0px;
+}
+
+.psHead {
+    float: left;
+    padding-left: 2%;
+    width: 78%;
+    font-size: 18px;
+    color: #FFF;
+}
+
+.psSubHead {
+    float: left;
+    padding-left: 2%;
+    padding-bottom: 10px;
+    width: auto;
+    font-size: 16px;
+}
+
+.psHeadClose {
+    float: right;
+    width: 18%;
+    padding-right: 2%;
+}
+
+#username {
+    color: #FFBB00;
+}
+
+a {
+    color: #004E88;
+}
+
+.subBut {
+    background: #FFBB00;
+    color: #000;
+    font-weight: bold;
+}
+
+.inp {
+    border: 1px solid #d9d9d9;
+    background: #f5f5fa;
+}
+
+#tc {
+    color: #0c397a;
+}
+
+#welcome {
+    color: #000;
+}
+
+#tool-inner ul li h2 {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+#tool-inner ul li p {
+    padding-left: 50px;
+}
+
+#listing li {
+    border-top: 1px solid #bababa;
+}
+
+.ui-select-acno-span {
+    display: none;
+}
+
+
+/* -------------------- on-off buttons ----------------- */
+
+.on {
+    background: #FFBB00;
+    color: #000;
+    font-weight: bold;
+}
+
+.off {
+    background: #c7c7c7;
+}
+
+.offGrey {
+    background: #7f7f7f !important;
+    color: #000;
+    font-weight: bold;
+}
+
+.onGrey {
+    background: #dddfe2;
+}
+
+.back-arrow {color:#FFBB00;height:20px;width:16px;padding-top:0px;}
+.tooltip1{  background:url(../images/comcast/create-net.png) no-repeat; }
+.tooltip2{  background:url(../images/comcast/connect.png) no-repeat; }
+.tooltip3{  background:url(../images/comcast/enjoy.png) no-repeat; }
+
+ul#header-menu2 li {
+    float: left;
+    padding: 20px 12px;
+    cursor: pointer;
+}
+
+ul#header-menu2 li.wifi-nw-on {
+    background: url(../images/comcast/nw-on.png) no-repeat center center #f5f5fa;
+    min-width: 40px;
+    min-height: 30px;
+}
+
+ul#header-menu2 li.wifi-report-off {
+    background: url(../images/comcast/report-off.png) no-repeat center center;
+    min-width: 40px;
+    min-height: 30px;
+}
+
+ul#header-menu2 li.wifi-nw-off {
+    background: url(../images/comcast/nw-off.png) no-repeat center center;
+    min-width: 40px;
+    min-height: 30px;
+}
+
+ul#header-menu2 li.wifi-report-on {
+    background: url(../images/comcast/report-on.png) no-repeat center center #f5f5fa;
+    min-width: 40px;
+    min-height: 30px;
+}
+
+h3.active,
+li.link,
+a.link {
+    color: #004E88;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#listing .active {
+    background: #fff;
+}
+
+
+/* -------------------- menu border - ssid setup page --------------- */
+
+.modeBorder {
+    border-bottom: 2px solid #FFBB00;
+}
+
+#spanPortSetting {
+    background: #0a6bb4;
+    color: #fff;
+}
+
+
+/* -------------------- radio button - ssid setup page --------------- */
+
+.blueBut {
+    background: #FFBB00 url(../images/comcast/radio_btn_selected.png) no-repeat;
+    background-position: 8px 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+.greyBut {
+    background: #d7d6d6 url(../images/comcast/radio_btn_deselected.png) no-repeat;
+    background-position: 8px 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+#spanPortSetting,
+#spanPortSetting2 {
+    background: #FFBB00;
+    color: #fff;
+}
+
+.inp2,
+.selectBox {
+    border: 1px solid #d9d9d9;
+}
+
+
+/* ---------------------  advanced -------------------- */
+
+.borderBottom {
+    border-bottom: 1px solid #bababa;
+}
+
+.leftBorder {
+    border-left: 1px solid #fff;
+}
+
+.subGen {
+    background: #FFBB00;
+    color: #fff;
+}
+
+
+/* ----------   reports config  ---------------- */
+
+.selectBoxDay,
+.selectBoxMonth,
+.selectBoxNum {
+    border: 1px solid #d9d9d9;
+}
+
+.textPara {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+textarea#emailSet {
+    border: 1px solid #cccccc;
+}
+
+#emailOver {
+    background-color: #ccc;
+}
+
+
+/* ----------   header app logo css  ---------------- */
+
+li.appLogoLi {
+    padding: 12px 0px 0px 25px !important;
+}
+
+li.appLogoLi img {
+    height: 34px;
+}
+
+li#liMenuOpt {
+    padding-left: 15px!important;
+    padding-top: 15px!important;
+    cursor: pointer;
+}
