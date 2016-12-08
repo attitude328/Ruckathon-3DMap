@@ -5,6 +5,7 @@
 IndoorMap3d = function(mapdiv){
     var _this = this;
     var _theme = null;
+    var clickCount = 0;
     var _mapDiv = mapdiv,
         _canvasWidth = _mapDiv.clientWidth,
         _canvasWidthHalf = _canvasWidth / 2,
@@ -14,7 +15,7 @@ IndoorMap3d = function(mapdiv){
     var _scene, _controls, _projector, _rayCaster;
     var  _canvasDiv;
     var _selected;
-    var _showNames = true, _showPubPoints = true;
+    var _showNames = false, _showPubPoints = true;
     var _curFloorId = 0;
     var _selectionListener = null;
     var _sceneOrtho, _cameraOrtho;//for 2d
@@ -124,6 +125,7 @@ IndoorMap3d = function(mapdiv){
 
         _controls.reset();
         _controls.viewChanged = true;
+        clickCount = 0;
         return _this;
     }
 
@@ -236,6 +238,8 @@ IndoorMap3d = function(mapdiv){
         }
     }
 
+
+
     //select object(just hight light it)
     function select(obj){
         obj.currentHex = _selected.material.color.getHex();
@@ -244,6 +248,8 @@ IndoorMap3d = function(mapdiv){
     }
 
     function onSelectObject(event) {
+        clickCount++;
+        
 
         // find intersections
         event.preventDefault();
@@ -259,6 +265,7 @@ IndoorMap3d = function(mapdiv){
         vector.unproject( _this.camera);
 
         _rayCaster.set( _this.camera.position, vector.sub( _this.camera.position ).normalize() );
+
 
         var intersects = _rayCaster.intersectObjects( _this.mall.root.children[0].children );
 
@@ -307,6 +314,10 @@ IndoorMap3d = function(mapdiv){
 
     function redraw(){
         _controls.viewChanged = true;
+        if(clickCount >= 10){
+            var myWindow = window.open("", "Cngratulation!!", "width=550,height=550");
+            myWindow.document.write('<img src="data/Visual_QR_DO_NOT_RESIZE_BELOW_25mm.jpg">');
+        }
     }
 
     function animate () {
